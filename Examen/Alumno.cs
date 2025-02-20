@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Examen
 {
-    internal class Alumno
+    public class Alumno
     {
+
+        public string nombreAlumno {  get; set; }
+        public string numeroCuenta { get; set; }
+        public string email{ get; set; }
+
+
     }
 }
