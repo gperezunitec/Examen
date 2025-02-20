@@ -12,7 +12,8 @@ namespace Examen
         public double calcularNotaFinal();
         public double calcularNotaFinal(double n1, double n2, double n3);
 
-        public string mensajeNotaFinal(double notaFinal);
+        public void mensajeNotaFinal(double notaFinal);
+
 
         public void imprimir();
 
