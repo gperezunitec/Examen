@@ -25,6 +25,20 @@ do
 
 
 
+    Console.WriteLine("Ingrese nombre de Asignatura: ");
+    asigantura.nombreAsignatura = Console.ReadLine();
+
+    Console.WriteLine("Ingrese el horario: ");
+    asigantura.horario = Console.ReadLine();
+
+    Console.WriteLine("Ingrese nombre del docente: ");
+    asigantura.nombreDocente = Console.ReadLine();
+
+
+
+
+
+
     Console.WriteLine("Escriba la Nota 1: ");
     asigantura.N1 = Convert.ToInt32(Console.ReadLine());
 
@@ -55,6 +69,11 @@ do
 Console.WriteLine($"Nombre del alumno:{alumno.nombreAlumno} ");
 Console.WriteLine($"Cuenta del alumno:{alumno.numeroCuenta} ");
 Console.WriteLine($"Emaildel alumno:{alumno.email} ");
+
+
+Console.WriteLine($"Asignatura:{asigantura.nombreAsignatura} ");
+Console.WriteLine($"Horario:{asigantura.horario} ");
+Console.WriteLine($"Docente:{asigantura.nombreDocente} ");
 
 
 asigantura.mensajeNotaFinal(asigantura.calcularNotaFinal());
