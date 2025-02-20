@@ -6,12 +6,24 @@ bool notasValidas;
 
 
 Asigantura asigantura=new Asigantura();
-
+Alumno alumno=new Alumno();
 
 
 
 do
 {
+
+
+    Console.WriteLine("Ingrese nombre del alumno: ");
+    alumno.nombreAlumno = Console.ReadLine();
+
+    Console.WriteLine("Ingrese numero de cuenta del alumno: ");
+    alumno.numeroCuenta = Console.ReadLine();
+
+    Console.WriteLine("Ingrese el email del alumno: ");
+    alumno.email = Console.ReadLine();
+
+
 
     Console.WriteLine("Escriba la Nota 1: ");
     asigantura.N1 = Convert.ToInt32(Console.ReadLine());
@@ -40,7 +52,9 @@ do
 } while (!notasValidas);
 
 
-
+Console.WriteLine($"Nombre del alumno:{alumno.nombreAlumno} ");
+Console.WriteLine($"Cuenta del alumno:{alumno.numeroCuenta} ");
+Console.WriteLine($"Emaildel alumno:{alumno.email} ");
 
 
 asigantura.mensajeNotaFinal(asigantura.calcularNotaFinal());
